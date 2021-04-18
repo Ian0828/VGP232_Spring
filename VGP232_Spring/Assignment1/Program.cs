@@ -7,6 +7,10 @@ using System.IO;
 // NAME: Yung-Hsiang Ma
 // STUDENT NUMBER: 940028
 
+//Grade: 99/100
+//Comment: Great job! To search where did you make a mistake you can search for ERROR.
+//For comments search for ERICK'S COMMENTS
+
 namespace Assignment1
 {
     class MainClass
@@ -132,6 +136,8 @@ namespace Assignment1
                 // TODO: add implementation to determine the column name to trigger a different sort. (Hint: column names are the 4 properties of the weapon class)
                 // print: Sorting by <column name> e.g. BaseAttack
                 // Sorts the list based off of the Weapon name.
+
+                //ERICK'S COMMENT: Next time, when you have more than 3 results to compare, use a switch instead.
                 Console.WriteLine($"Sorting by {sortColumnName}");
 
                 if (sortColumnName.ToLower() == "name")
@@ -184,6 +190,9 @@ namespace Assignment1
                         // TODO: write the header of the output "Name,Type,Rarity,BaseAttack"
                         writer.WriteLine("Name, Type, Rarity, BaseAttack");
                         // TODO: use the writer to output the results.
+
+                        //ERROR: -1 -> If you are using foreach, you don't need to use j as index. 
+                        //Instead writer.WriteLine(line)
                         int j = 0;
                         foreach (var line in results)
                         {
