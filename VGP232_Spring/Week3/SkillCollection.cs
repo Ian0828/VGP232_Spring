@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Week2
+namespace Week3
 {
-    public class IDamageable
+    public class SkillCollection : List<Skill>
     {
-        //void TakeDamage(int damage);
+
     }
 }

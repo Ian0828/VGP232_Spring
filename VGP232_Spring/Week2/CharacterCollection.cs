@@ -21,16 +21,16 @@ namespace Week2
             return x.HP - y.HP;
         }
 
-        int GetMaxHPFromCharacters()
-        {
-            int maxHP = 0;
-            for(int i = 0; i < this.Count; ++i)
-            {
-                if (this[i].HP > maxHP)
-                {
-                    maxHP = this[i].HP;
-                }
-            }
-        }
+        //int GetMaxHPFromCharacters()
+        //{
+        //    int maxHP = 0;
+        //    for(int i = 0; i < this.Count; ++i)
+        //    {
+        //        if (this[i].HP > maxHP)
+        //        {
+        //            maxHP = this[i].HP;
+        //        }
+        //    }
+        //}
     }
 }
