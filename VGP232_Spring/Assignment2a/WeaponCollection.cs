@@ -25,6 +25,10 @@ namespace Assignment2a
         }
         public int GetLowestBaseAttack()
         {
+            //ERROR -1: To get the lowest Damage at start, you can set this variable to the 
+            //maximum value supported by an integer
+            //int lowestBA = int.MaxValue
+
             int lowestBA = 99999;
 
             for(int i = 0; i < this.Count; i++)
@@ -99,6 +103,42 @@ namespace Assignment2a
                 Console.WriteLine("Argument is wrong");
             }
         }
+
+        //ERROR: -2. You are always adding in your load. You should first clear your list and then add.
+        //A good function would be:
+        //public bool Load(string filename)
+        //{
+        //    // Use the streamreader to add weapons to the previously created list
+        //    using (StreamReader reader = new StreamReader(filename))
+        //    {
+        //        // Clear the list before loading data
+        //        this.Clear();
+
+        //        // Skip the first line because header does not need to be parsed.
+        //        // Name, Type, Image, Rarity, BaseAttack
+        //        string header = reader.ReadLine();
+
+        //        // The rest of the lines looks like the following:
+        //        // Skyrider Sword,Sword,3,38
+
+        //        while (reader.Peek() > 0)
+        //        {
+        //            // Create a null weapon and a string that contais the line's content
+        //            string line = reader.ReadLine();
+        //            Weapon newWeapon = null;
+
+        //            // Check if parsing is possible
+        //            if (Weapon.TryParse(line, out newWeapon))
+        //            {
+        //                // Add the Weapon to the list
+        //                this.Add(newWeapon);
+        //            }
+        //        }
+        //    }
+
+        //    // Return true when the weapons are succesfully loaded
+        //    return true;
+        //}
         public bool Load(string filename)
         {
             if (!File.Exists(filename))

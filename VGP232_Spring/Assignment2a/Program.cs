@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.IO;
 
 // TODO: Fill in your name and student number.
-// Assignment 1
+// Assignment 2
 // NAME: Yung-Hsiang Ma
 // STUDENT NUMBER: 1940028
+
+//GRADE: 94/100
 
 namespace Assignment2a
 {
@@ -127,6 +129,8 @@ namespace Assignment2a
                 }
             }
 
+            //ERROR: -3. Why are you checking again the columnName? Your SortBy should do this.
+            //results.SortBy(columnName)
             if (sortEnabled)
             {
                 // TODO: add implementation to determine the column name to trigger a different sort. (Hint: column names are the 4 properties of the weapon class)
@@ -207,7 +211,5 @@ namespace Assignment2a
 
             Console.WriteLine("Done!");
         }
-
-
     }
 }
