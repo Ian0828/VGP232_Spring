@@ -7,7 +7,7 @@ using System.IO;
 // NAME: Yung-Hsiang Ma
 // STUDENT NUMBER: 1940028
 
-//GRADE: 94/100
+//GRADE: 100/100
 
 namespace Assignment2b
 {
