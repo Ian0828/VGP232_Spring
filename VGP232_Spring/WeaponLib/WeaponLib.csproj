@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <GenerateProgramFile>false</GenerateProgramFile>
+    <AssemblyName>WeaponLib</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="data2.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

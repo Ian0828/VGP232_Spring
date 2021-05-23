@@ -1,0 +1,61 @@
+﻿<Window x:Class="Assignment2c.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Assignment2c"
+        mc:Ignorable="d"
+        Title="Weapon Editor" Height="500" Width="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="9*"/>
+        </Grid.RowDefinitions>
+        <Button Click="LoadClicked" Content="Load" HorizontalAlignment="Center" VerticalAlignment="Center" Height="22" Width="60"/>
+        <Button Click="AddClicked" Content="Add" HorizontalAlignment="Center" VerticalAlignment="Top" Height="22" Width="60" Grid.Column="4" Grid.Row="4" Margin="0,38,0,0" Grid.RowSpan="2"/>
+        <Button Click="EditClicked" Content="Edit" HorizontalAlignment="Center" VerticalAlignment="Top" Height="22" Width="60" Grid.Column="4" Margin="0,32,0,0" Grid.Row="5" Grid.RowSpan="2"/>
+        <Button Click="RemoveClicked" Content="Remove" HorizontalAlignment="Center" VerticalAlignment="Top" Height="22" Width="60" Grid.Column="4" Grid.Row="6" Margin="0,27,0,0"/>
+        <Button Click="SaveClicked" Content="Save" HorizontalAlignment="Center" VerticalAlignment="Center" Height="22" Width="60" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="1" Text="Sort by: " TextWrapping="Wrap" VerticalAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,14,0,0" Grid.Row="3" Text="Show only type " TextWrapping="Wrap" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="87"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,2,0,0" Grid.Row="4" Text="Filter by name: " TextWrapping="Wrap" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="87"/>
+        <RadioButton Click="SortByName" Content="Name" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Center" Width="54" Margin="10,0,0,0"/>
+        <RadioButton Click="SortByBaseAttack" Content="BaseAttack" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Width="80"/>
+        <RadioButton Click="SortByRarity" Content="Rarity" Grid.Column="3" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Center" Width="54" Margin="10,0,0,0"/>
+        <RadioButton Click="SortByPassive" Content="Passive" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Width="60"/>
+        <RadioButton Click="SortBySecondaryStat" Content="SecondaryStat" Grid.Column="2" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Center"  Width="94" Grid.ColumnSpan="2"/>
+        <ListBox Name="lbFilterByName" Grid.Column="1" Grid.Row="4" Margin="34,8,20,32" Grid.ColumnSpan="3"/>
+        <ComboBox Name="cbTypes" Grid.ColumnSpan="3" Margin="34,20,20,20" Grid.Row="3" Grid.Column="1"/>
+        <ListBox Name="lbWeapons" Grid.Row="4" Grid.ColumnSpan="4" Margin="22,38,20,36" Grid.RowSpan="5"/>
+        <!--<Button Width="70" Height="30" Click="LoadClicked" Margin="10,10,320,444">Load</Button>
+        <Button Width="70" Height="30" Click="SaveClicked" Margin="100,10,230,444">Save</Button>
+        <Button Width="70" Height="30" Click="AddClicked" Margin="320,242,10,212">Add</Button>
+        <Button Width="70" Height="30" Click="EditClicked" Margin="320,297,10,157">Edit</Button>
+        <Button Width="70" Height="30" Click="RemoveClicked" Margin="320,352,10,98">Remove</Button>
+        <TextBlock Margin="15,74,341,391">Sort by:</TextBlock>
+        <TextBlock Margin="15,145,295,317">Show only type</TextBlock>
+        <TextBlock Margin="15,185,295,274">Filter by name:</TextBlock>
+        <RadioButton Margin="82,75,265,391">Name</RadioButton>
+        <RadioButton Margin="152,75,164,391">BaseAttack</RadioButton>
+        <RadioButton Margin="252,75,95,391">Rarity</RadioButton>
+        <RadioButton Margin="82,104,253,362">Passive</RadioButton>
+        <RadioButton Margin="152,104,150,362">SecondaryStat</RadioButton>
+        <ComboBox Width="180" Height="25" Margin="110,142,110,317"></ComboBox>
+        <TextBox Width="180" Height="25" Margin="110,185,110,274"></TextBox>
+        <ListBox Height="220" Margin="15,237,110,27"/>-->
+    </Grid>
+</Window>
