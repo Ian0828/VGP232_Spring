@@ -1,0 +1,41 @@
+﻿<Window x:Class="Assignment4.EncryptionTool"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Assignment4"
+        mc:Ignorable="d"
+        Title="EncryptionTool" Height="500" Width="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="60*"/>
+            <ColumnDefinition Width="20*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="9*"/>
+        </Grid.RowDefinitions>
+        <TextBlock FontSize="14" HorizontalAlignment="Left" Margin="20,26,0,0" Text="Please enter your message" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock FontSize="14" HorizontalAlignment="Left" Margin="20,26,0,0" Text="Result" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Row="2"/>
+        <TextBlock FontSize="14" HorizontalAlignment="Left" Margin="20,25,0,0" Text="Please enter your cipher text" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Row="5"/>
+        <TextBlock FontSize="14" HorizontalAlignment="Left" Margin="20,26,0,0" Text="Result" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Row="7"/>
+        <TextBox Name="tbTextMessage" HorizontalAlignment="Center" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Center" Width="260" Height="25"/>
+        <TextBox Name="tbTextResult" HorizontalAlignment="Center" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Center" Width="260" Height="25"/>
+        <TextBox Name="tbCipherMessage" HorizontalAlignment="Center" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Center" Width="260" Height="25"/>
+        <TextBox Name="tbCipherResult" HorizontalAlignment="Center" Grid.Row="8" TextWrapping="Wrap" VerticalAlignment="Center" Width="260" Height="25"/>
+        <Button Click="LoadTextClicked" Content="Load Text" Grid.Column="1" HorizontalAlignment="Center" Margin="0,26,0,0" VerticalAlignment="Top" Height="21"/>
+        <Button Click="EncryptClicked" Content="Encrypt" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
+        <Button Click="EncryptSaveToFileClicked" Content="Save to File" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3"/>
+        <Button Click="LoadCipherClicked" Content="Load Cipher" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="5" Margin="0,25,0,0"/>
+        <Button Click="DecryptClicked" Content="Decrypt" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="6"/>
+        <Button Click="DecryptSaveToFileClicked" Content="Save to File" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="8"/>
+
+    </Grid>
+</Window>
