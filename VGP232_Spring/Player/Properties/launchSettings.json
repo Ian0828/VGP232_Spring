@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Player": {
+      "commandName": "Project",
+      "commandLineArgs": "-i PlayerData.csv -o output.csv -c -s"
+    }
+  }
+}

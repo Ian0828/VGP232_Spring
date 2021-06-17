@@ -136,5 +136,10 @@ namespace Assignment2c
             weaponCollection.SortBy("SecondaryStat");
             lbWeapons.Items.Refresh();
         }
+
+        private void cbTypes_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

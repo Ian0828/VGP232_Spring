@@ -1,0 +1,42 @@
+﻿<Window x:Class="FinalProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalProject"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+        <Button Click="LoadClicked" Content="Load PLayers" HorizontalAlignment="Center" VerticalAlignment="Center" Height="35" Width="100" />
+        <Button Click="AddClicked" Content="Add To Team" HorizontalAlignment="Center" VerticalAlignment="Top" Height="35" Width="100" Grid.Column="4" Margin="0,70,0,0" Grid.RowSpan="2" />
+        <Button Click="SaveClicked" Content="Save Team" HorizontalAlignment="Center" VerticalAlignment="Top" Height="35" Width="100" Grid.Row="3" Margin="0,13,0,0" />
+        <Button Click="RemoveClicked" Content="Remove Player" HorizontalAlignment="Center" VerticalAlignment="Top" Height="35" Width="100" Grid.Row="3" Grid.Column="4" Margin="0,58,0,0" Grid.RowSpan="2" />
+        <Button Click="EditClicked" Content="Edit Player" HorizontalAlignment="Center" VerticalAlignment="Top" Height="35" Width="100" Grid.Row="4" Grid.Column="4" Margin="0,40,0,0" />
+        <ListBox Name="lbPlayers" Grid.ColumnSpan="3" Grid.RowSpan="3" Grid.Column="1" Margin="0,70,0,10"/>
+        <ListBox Name="lbTeam" Grid.ColumnSpan="3" Grid.RowSpan="3" Grid.Column="1" Grid.Row="3" Margin="0,56,0,24"/>
+        <TextBlock Text="Player Pool" FontSize="20" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Column="2"/>
+        <TextBlock Text="My Team" FontSize="20" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="2" Grid.Row="3" Margin="0,14,0,0"/>
+        <TextBlock Text="Sort by position" FontSize="12" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Margin="0,80,0,0" Grid.RowSpan="2"/>
+        <RadioButton Click="AllClicked" Content="All" HorizontalAlignment="Left" Margin="62,55,0,0" Grid.Row="1" VerticalAlignment="Top" Width="68"/>
+        <RadioButton Click="SortByOverall" Content="Overall" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" Width="68" Margin="12,10,0,0"/>
+        <RadioButton Click="SortByShooting" Content="Shooting" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" Width="72" Margin="78,10,0,0"/>
+        <RadioButton Click="SortBySpeed" Content="Speed" HorizontalAlignment="Left" Margin="12,44,0,0" Grid.Row="2" VerticalAlignment="Top" Width="61"/>
+        <RadioButton Click="SortByHeight" Content="Height" HorizontalAlignment="Left" Margin="78,44,0,0" Grid.Row="2" VerticalAlignment="Top" Width="62"/>
+        <ComboBox Name="cbPosition" HorizontalAlignment="Center" Margin="0,24,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120" Height="20" SelectionChanged="cbPosition_SelectionChanged"/>
+    </Grid>
+</Window>
